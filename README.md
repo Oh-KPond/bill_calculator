@@ -1,2 +1,3 @@
-# bill_calculator
-For teaching Minitest
+# TDD With Minitest
+
+This repository hosts the starter files for learning Minitest.
