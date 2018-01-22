@@ -21,4 +21,16 @@ describe "Bill" do
       Bill.new(1)
     }.must_raise ArgumentError
   end
+
+  it "can calculate the proper subtotal" do
+    # Arrange
+    bill = Bill.new([4.75, 8.75])
+
+    # Act
+    subtotal = bill.subtotal
+
+    # Assert
+    subtotal.must_equal 13.50
+  end
+
 end
