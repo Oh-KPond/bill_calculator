@@ -7,4 +7,8 @@ class Bill
     end
     @prices = prices
   end
+
+  def subtotal
+    return @prices.reduce(0, :+)
+  end
 end
