@@ -11,4 +11,8 @@ class Bill
   def subtotal
     return @prices.reduce(0, :+)
   end
+
+  def tax
+    return subtotal * 0.08
+  end
 end
