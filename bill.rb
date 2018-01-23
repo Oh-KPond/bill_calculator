@@ -15,4 +15,8 @@ class Bill
   def tax
     return subtotal * 0.08
   end
+
+  def total
+    return subtotal + tax
+  end
 end
