@@ -43,4 +43,12 @@ describe "Bill" do
     # Assert
     tax.must_equal @bill.subtotal * 0.08
   end
+
+  it "can calculate the total price including tax" do
+    # Act
+    total = @bill.total
+
+    # Assert
+    total = @bill.total.must_equal @bill.subtotal + @bill.tax
+  end
 end
